@@ -84,6 +84,18 @@ function fizzBuzz(n) {
     }
 }
 
-console.log(fizzBuzz(30));
+// console.log(fizzBuzz(30));
+
+function findMissingNumber(nums) {
+    const n = nums.length + 1; //because one number is missing
+    const expectedSum = (n * (n + 1)) / 2;
+    const actualSum = nums.reduce((sum, num) => sum + num, 0);
+
+    return expectedSum - actualSum;
+}
+
+// console.log(findMissingNumber([1, 2, 4, 5, 6, 7]));
+
+
 
 
