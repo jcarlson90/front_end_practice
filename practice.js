@@ -96,6 +96,22 @@ function findMissingNumber(nums) {
 
 // console.log(findMissingNumber([1, 2, 4, 5, 6, 7]));
 
+function twoNumSum(nums, target) {
+    let seen = {}
+
+    for (let num of nums) {
+        let differecne = target - num;
+        if (seen[difference] !== undefined) {
+            return [difference, num];
+        }
+        seen[num] = true;
+    }
+
+    return [];
+}
+
+// console.log(twoNumSum([2, 7, 11, 15],9));
+
 
 
 
